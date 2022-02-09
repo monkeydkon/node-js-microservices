@@ -12,7 +12,6 @@ const start = async () => {
     if (!process.env.MONGO_URI) {
         throw new Error('MONGO_URI must be defined')
     }
-
     
     if (!process.env.NATS_URL) {
         throw new Error('NATS_URL must be defined')
