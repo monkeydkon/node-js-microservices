@@ -29,6 +29,7 @@ app.all('*', () => {
     throw new NotFoundError()
 })
 
+
 app.use(errorHandler)
 
 export { app }
