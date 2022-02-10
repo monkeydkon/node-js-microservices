@@ -12,7 +12,8 @@ app.use(json())
 app.use(
     cookieSession({
         signed: false,
-        secure: process.env.NODE_ENV !== 'test' // if in test env false, else true (jest automatically sets NODE_ENV)
+        // secure: process.env.NODE_ENV !== 'test' // if in test env false, else true (jest automatically sets NODE_ENV)
+        secure: false
     })
 )
 

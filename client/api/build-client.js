@@ -10,7 +10,7 @@ export default ({ req }) => {
     } else {
         // we are in the browser
         return axios.create({
-            baseURL: '/'
+            baseURL: 'https://microservices.monkeydkon.com/'
         })
     }
 }
